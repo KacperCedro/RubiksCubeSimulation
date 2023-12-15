@@ -20,6 +20,7 @@ function CreateCube(){
 function CreateSubCubes(y,x,z, cube){
     let subCube = document.createElement("div");
     subCube.className = "subCube"
+    subCube.style.translate = toString(Math.random() * 1000) + "px"
     cube.appendChild(subCube)
     CreateCubeSides(subCube)
     tableOfSubCubes[y][x][z] = subCube

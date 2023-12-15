@@ -1,11 +1,5 @@
-.stage {
-    position: absolute;
-    top: 400px;
-    left: 400px;
-    width: 100px; 
-    height: 100px;
-    -webkit-perspective: 1000px;
-    -webkit-perspective-origin: 50% -240px;
+body{
+    background-color: rgb(22, 09, 2C) ;
 }
 .subCube{
     -webkit-transform-style: preserve-3d;
@@ -17,9 +11,16 @@ figure {
     position: absolute;
     width: 100px; 
     height: 100px;
-    -webkit-transform-origin: 50% 50% 50%;
+    -webkit-transform-origin: center center center;
 }
 #cube { 
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    width: 100px; 
+    height: 100px;
+    -webkit-perspective: 1600px;
+    -webkit-perspective-origin: center -600px;
     -webkit-transform-style: preserve-3d;
 
 }
@@ -52,6 +53,6 @@ figure {
         -webkit-transform: rotateX(0) rotateY(0) rotateZ(0); 
     }
     100% {
-        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
     }
 }
