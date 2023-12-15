@@ -1,2 +1,2 @@
-# RubiksCubeSymulation
-web tool for simple cube sumulation 
+# RubiksCubeSimulation
+web tool for simple cube simulation 
