@@ -1,0 +1,57 @@
+.stage {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    width: 100px; 
+    height: 100px;
+    -webkit-perspective: 1000px;
+    -webkit-perspective-origin: 50% -240px;
+}
+.subCube{
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: rotate 10s infinite linear;
+}
+figure {
+    opacity: 0.5;
+    display: block; 
+    position: absolute;
+    width: 100px; 
+    height: 100px;
+    -webkit-transform-origin: 50% 50% 50%;
+}
+#cube { 
+    -webkit-transform-style: preserve-3d;
+
+}
+.front { 
+    -webkit-transform: translateZ(50px); 
+    background-color: blue;
+}
+.back { 
+    -webkit-transform: rotateY(180deg) translateZ(50px); 
+    background-color: green;
+}
+.top {
+     -webkit-transform: rotateX(90deg) translateZ(50px); 
+     background-color: yellow;
+}
+.bottom {
+     -webkit-transform: rotateX(-90deg) translateZ(50px); 
+     background-color: white;
+}
+.left { 
+    -webkit-transform: rotateY(-90deg) translateZ(50px); 
+    background-color: red;
+}
+.right { 
+    -webkit-transform: rotateY(90deg) translateZ(50px);
+    background-color: orange;
+}
+@-webkit-keyframes rotate {
+    0% { 
+        -webkit-transform: rotateX(0) rotateY(0) rotateZ(0); 
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
